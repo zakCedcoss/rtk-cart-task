@@ -55,7 +55,9 @@ function Cart() {
         <div className="totalQuantity">{totalQuantity} Item(s) in Cart</div>
         <div className="totalPrice">Total Price: ${totalPrice.toFixed(2)}</div>
         <div className="footerBtn">
-          <button>Proceed To Payment</button>
+          <button disabled={cart.length === 0 ? true : false}>
+            Proceed To Payment
+          </button>
         </div>
       </div>
     </div>

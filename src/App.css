@@ -11,6 +11,17 @@
   align-items: center;
   justify-content: space-between;
 }
+.filterContainer {
+  margin: 1rem;
+}
+.filterContainer span{
+  font-weight: 700;
+}
+.filter {
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
 .cartBtn {
   position: relative;
   font-size: 1.5rem;
