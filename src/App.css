@@ -1,0 +1,232 @@
+.App {
+  width: 100%;
+  height: 100%;
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: #bbbbbb;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartBtn {
+  position: relative;
+  font-size: 1.5rem;
+  margin-inline: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartBtn span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  text-align: center;
+  width: 15px;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+.cartContainer {
+  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #bbbbbb;
+  transition: all 0.5s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.closing {
+  right: -100%;
+}
+.cartHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+.cartClose {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.cartBodyContainer {
+  overflow-y: auto;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-block: 0.5rem;
+  gap: 1rem;
+}
+.cartBody {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartBodyImg {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1i;
+  flex-wrap: wrap;
+}
+.cartBodyImg img {
+  width: 70px;
+  aspect-ratio: 1;
+}
+.cartBodyImg p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+.cartActionBtns {
+  flex: 1;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartActionBtns button {
+  width: 25px;
+  background-color: black;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 0;
+  margin-inline:1rem;
+}
+.cartActionBtns button:hover {
+  background-color: white;
+  color: black;
+}
+.amount{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.itemQuantity{
+  flex: 1;
+}
+.itemAmount{
+  flex: 1;
+}
+.cartFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  padding: 1rem;
+}
+.imgContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.imgWrapper {
+  width: 300px;
+  height: 450px;
+  box-shadow: 0 0 15px #bbbbbb;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.imgWrapper img {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+.productContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.productImageContainer {
+  width: 700px;
+  height: 600px;
+  margin-inline: 2rem;
+}
+.productImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.productDetailContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.productDetail {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.productDetail h3 {
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+}
+.productDetail span {
+  font-weight: 700;
+}
+.productDetail p {
+  margin-block: 0.5rem;
+}
+.productActionBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productActionBtns button {
+  width: 150px;
+}
+.productActionBtns span {
+  width: 50px;
+  text-align: center;
+  font-size: 2rem;
+  margin-inline: 1rem;
+}
+.addToCart {
+  width: 100%;
+  margin-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.addToCart button {
+  width: 390px;
+}
+.addToCart button:hover {
+  background-color: crimson;
+}
